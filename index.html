@@ -1,0 +1,353 @@
+<!-- created by Pranshu jaguri-->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DOODLE DOO </title>
+	<!-- Bootstrap Core CSS -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Theme CSS -->
+	<link rel="icon" href="Images/favicon-32x32.png.gif" type="text/css" sizes="">
+	<link href="css/doodle.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet" type="text/css">
+	<!-- other css-->
+	<!--  other css-->
+	<!-- Custom Fonts -->
+	<!--<link rel=”stylesheet” id=”font-awesome-css” href=”//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css” type=”text/css” media=”screen”>-->
+	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+	<!--<link href="css/custom.css" rel="stylesheet" type="text/css">-->
+	<script src="js/jquery-1.12.3.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!--<script src="js/resume.js"></script>-->
+</head>
+<script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+<script src="http://demo.web3designs.com/jquery-easing.min.js"></script>
+<script type="text/javascript">
+	$(function () {
+		if (!$.browser.msie) {
+			var a = 0;
+			for (; a < 3; a += 1) {
+				setTimeout(function b() {
+					var a = Math.random() * 1e3 + 4e3
+						, c = $("<div />", {
+							"class": "smoke"
+							, css: {
+								opacity: -2
+								, left: Math.random() * 100 + 30
+							}
+						});
+					$(c).appendTo("#viewport");
+					$.when($(c).animate({
+						opacity: 1
+					}, {
+						duration: a / 2
+						, easing: "linear"
+						, queue: false
+						, complete: function () {
+							$(c).animate({
+								opacity: 0
+							}, {
+								duration: a / 2
+								, easing: "linear"
+								, queue: false
+							})
+						}
+					}), $(c).animate({
+						bottom: $("#viewport").height()
+					}, {
+						duration: a
+						, easing: "linear"
+						, queue: false
+					})).then(function () {
+						$(c).remove();
+						b()
+					})
+				}, Math.random() * 3e3)
+			}
+		}
+		else {
+			"use strict";
+			var a = 0;
+			for (; a < 15; a += 1) {
+				setTimeout(function b() {
+					var a = Math.random() * 1e3 + 5e3
+						, c = $("<div />", {
+							"class": "smoke"
+							, css: {
+								left: Math.random() * 100 + 70
+							}
+						});
+					$(c).appendTo("#viewport");
+					$.when($(c).animate({}, {
+						duration: a / 4
+						, easing: "linear"
+						, queue: false
+						, complete: function () {
+							$(c).animate({}, {
+								duration: a / 4
+								, easing: "linear"
+								, queue: false
+							})
+						}
+					}), $(c).animate({
+						bottom: $("#viewport").height()
+					}, {
+						duration: a / 2
+						, easing: "linear"
+						, queue: false
+					})).then(function () {
+						$(c).remove();
+						b()
+					})
+				}, Math.random() * 3e3)
+			}
+		}
+	}())
+</script>
+<style>
+.navbar-inverse .navbar-collapse,
+	.navbar-inverse .navbar-form.container {
+		border-color: #ccc;
+	}
+	
+	.navbar,
+	.container {
+		margin-bottom: -20px;
+	}
+	
+	.navbar-inverse .navbar-collapse,
+	.navbar-inverse .navbar-form {
+		border-color: #999;
+	}
+	
+	.head1 {
+		/*z-index: 0;*/
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		z-index: -1 !important;
+	}
+	
+	#diff {
+		background-image: url(../new/Images/nav_bg.png);
+	}
+	
+	#diff1 {
+		background-image: url(../new/Images/nav_bg.png);
+	}
+	
+	.head2 {
+		position: relative;
+		margin-top: -23px;
+		width: 13%;
+		float: left;
+		margin-left: 77px;
+		z-index: 1;
+	}
+	
+	@media (max-width: 769px) {
+		.navbar-custom .navbar-nav {
+			margin-top: 50px;
+			letter-spacing: 1px;
+			background-color: #a7a9ac;
+		}
+	}
+}
+@media (max-width: 769px) {
+	#viewport {
+		background-repeat: no-repeat;
+		background-size: contain;
+		margin: 0px;
+		margin-left: -22px;
+		/* position: fixed; */
+		/* max-height: 900px; */
+		/* position: relative; */
+		width: 700px;
+		/* max-width: 1143px; */
+		height: 400px;
+		/* overflow: hidden; */
+		position: fixed;
+		/* background-size: cover; */
+		background-size: cover;
+		/* overflow: hidden; */
+		background: url('../Images/bbb.webp');
+	}
+}
+.list-inline {
+	background-color: cadetblue;
+}
+.font p {
+	font-family: 'Stalemate',
+	cursive;
+}
+.navbar-brand> img {
+	margin-left: -69px;
+	width: 13%;
+	margin-top: -28px;
+}
+@media (max-width: 768px) {
+	.logo img {
+		width: 15%;
+		margin-top: -21px;
+		margin-left: 47px;
+		display: block;
+		height: auto;
+		max-width: 100%;
+	}
+}
+@media (max-width:1980) {
+	.navbar-header> img {
+		margin-left: -391px;
+	}
+}
+.margin-15 {
+	margin: 15px !important;
+}
+.margin-30 {
+	margin: 30px !important;
+}
+	
+</style>
+
+<body id="" class="index"> <a class="scrollToTop" href="#"><i class="fa fa-chevron-up"></i></a>
+	<nav id="mainNav" class="navbar navbar-inverse navbar-fixed-top navbar-custom">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header page-scroll">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i> </button>
+				<a class="navbar-brand logo imagesize" href="index.html"> <img class="img-responsive" src="./Images/favicon-32x32.png.gif" alt="logo"> </a>
+			</div> <img class="head1" src="Images/nav_bg.png" alt="">
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right" id="bs-example-navbar-collapse-1">
+					<li class="page-scroll "> <a href="index.html">HOME</a> </li>
+					<li class="page-scroll"> <a href="index.html">Client</a> </li>
+					<li class="page-scroll active"> <a href="index.html">About US</a> </li>
+					<li class="page-scroll"> <a href="index.html">Contact US</a> </li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<div> </div>
+		<!-- /.container-fluid -->
+	</nav>
+	<!--header closed-->
+	<div class="visible-fhd" id="wrap">
+		<div id="viewport"> </div>
+	</div>
+	<!--cupimage div closed-->
+	<hr class="featurette-divider">
+	<!-- <img src="Images/aboutus.png" alt=""style="
+    margin-left: 562px;
+    /* margin-left: initial; */
+    margin-top: -19px;
+">-->
+	<!--<button class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      ...
+    </div>
+  </div>
+</div>-->
+	<section id="services" class="section section-padded">
+		<div class="container">
+			<div class="row text-center title">
+				<div class="animated zoomInDown">
+					<h2>RECENT PORTFOLIO</h2>
+					<hr class="star-primary">
+					<!--<h4> Programming Language</h4>-->
+					<div class="col-md-12">
+						<div class="row margin-30">
+							<div class="col-md-12">
+								<div class="col-md-4">
+									<div class="service">
+										<div class="icon-holder"> <img id="resp" src="Images/aboutVideo3.png" alt="" class="icon"> </div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="service">
+										<div class="icon-holder">
+											<a href=""> <img id="resp" src="Images/aboutVideo1.png" alt="" class="icon"> </a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="service">
+										<div class="icon-holder">
+											<a href="#"> <img id="resp" src="Images/aboutVideo2.png" alt="" class="icon"> </a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="row margin-30">
+							<div class="col-md-12">
+								<div class="col-md-4">
+									<div class="service">
+										<div class="icon-holder">
+											<a href="#"> <img id="resp" src="Images/1.png" alt="" class="icon"> </a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="service">
+										<div class="icon-holder">
+											<a href="#"> <img id="resp" src="Images/7.png" alt="" class="icon"> </a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="service">
+										<div class="icon-holder">
+											<a href="#"> <img id="resp" src="Images/3.png" alt="" class="icon"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+	</section>
+	<!--footer section-->
+	<footer class="text-center clearfix">
+                  <div class="footer-below">
+                     <div class="col-lg-12">
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://www.facebook.com/DoodleDooDesignNAdvertising?ref=hl" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://in.pinterest.com/yesprabhakar/" class="btn-social btn-outline"><i class="fa fa-pinterest-p"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/yesprabhakar" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/start/join?trk=login_reg_redirect&session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fprofile%2Fview%3Fid%3D23277124%26trk%3Dhp-identity-name" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+					<div class="row">
+							<div  id="colo" class="col-lg-12" style="background-color: #a1a3a5; color: black;">
+										  Copyright © 2015 Doodle Doo Design & Advertising. reserved  All rights
+										  <br> Designed & Powered by: Doodle Doo Design & Advertising  
+							</div>
+					</div>
+					
+					</div>
+    </footer>
+	<!--fooetr closed-->
+</body>
+
+</html>
